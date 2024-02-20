@@ -4,15 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Veuz Marketing</title>
+  <title>marketing-Landing</title>
   <link rel="stylesheet" href="assets/css/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="fav-icon" href="assets/img//fav-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+
+
   <section class="home-banner">
 
     <div class="main-banner">
@@ -22,47 +26,46 @@
           <a class="navbar-brand" href="#">
             <img src="assets/img/logo-white.svg" alt="">
           </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse w-100 d-flex justify-content-between navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mr-auto home-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Why Choose Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#">Contact Us</a>
-              </li>
-            </ul>
-
-            <button class="btn btn-outline-success nav-btn my-2 my-sm-0" type="button">Get started now</button>
-
-          </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse  w-100 navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mr-auto home-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.php">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#about-us-sec">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#service-sec">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#why-choose">Why Choose Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#contact-us">Contact Us</a>
+                </li>
+              </ul>
+              <button class="btn btn-outline-success nav-btn my-md-2 my-0" type="button">Get started now</button>
+            </div>
+        
         </nav>
 
         <div class="banner-cntnt">
-          <div class="container">
+          <div class="container" data-aos="fade-right" data-aos-duration="1500">
             <h2>Get help from the expert <br>
               consultants.</h2>
             <p>With lots of unique blocks, you can easily build a page without coding. Build your next <br> consultancy
               website within few minutes.</p>
+           <a href="#about-us-sec">
             <button class="main-btn" type="button">About us <span><i
-                  class="fa-solid fa-arrow-right-long"></i></span></button>
+              class="fa-solid fa-arrow-right-long"></i></span></button>
+           </a>
           </div>
         </div>
 
-        <div class="home-contact">
+        <div class="home-contact" data-aos="fade-up" data-aos-duration="1500">
           <h3>Get in touch with us</h3>
           <form action="">
             <div class="row">
@@ -108,7 +111,7 @@
 
   <section class="section-padding">
     <div class="container">
-      <div class="row">
+      <div class="row" data-aos="fade-up" data-aos-duration="1500">
         <div class="col-lg-3">
           <div class="counter-box">
             <h2><span id="Partners">1000</span>+</h2>
@@ -140,10 +143,10 @@
   </section>
 
 
-  <section class="section-padding">
+  <section class="section-padding" id="about-us-sec">
     <div class="container">
       <div class="row d-flex align-items-center">
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1500">
           <h5 class="secdry-sub-head">
             Core Features
           </h5>
@@ -164,14 +167,14 @@
           <button class="main-btn" type="button">Download Brochure <span><i
                 class="fa-solid fa-download"></i></span></button>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1500">
           <img src="assets/img/abt-img.png" alt="" class="abt-img">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section-padding">
+  <section class="section-padding" id="service-sec">
     <div class="container">
       <div class="text-center-div">
         <h2 class="main-sub-head">
@@ -241,7 +244,7 @@
         </div>
       </div>
 
-      <div class="text-center-div mt-40">
+      <div class="text-center-div mt-40 sm-margin-btn">
         <button class="main-btn" type="button">View More<span><i
               class="fa-solid fa-arrow-right-long"></i></span></button>
       </div>
@@ -345,11 +348,13 @@
     </div>
   </section>
 
-  <section class="section-padding">
+
+
+  <section class="section-padding" id="why-choose">
     <div class="container">
     <div class="why-choose-main-div">
       <div class="row d-flex align-items-center">
-        <div class="col-lg-8">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1500">
           <h5 class="secdry-sub-head">
             Why Choose Us
           </h5>
@@ -364,22 +369,22 @@
           <button class="main-btn" type="button">View More<span><i
             class="fa-solid fa-arrow-right-long"></i></span></button>
         </div>
-        <div class="col-lg-4">
-          <img src="assets/img/why-choose.png" alt="" class="img-fluid">
+        <div class="col-lg-4" data-aos="fade-left" data-aos-duration="1500">
+          <img src="assets/img/why-choose.png" alt="" class="img-fluid why-choose-img">
         </div>
       </div>
-      <div class="row mt-5">
+      <div class="row mt-5" data-aos="fade-up" data-aos-duration="1500">
         <div class="col-lg-4">
-          <div class="why-choose-box">
+          <div class="why-choose-box icon-hover">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9.01173 13.9203C8.66262 14.6471 8.46704 15.4616 8.46704 16.3219C8.46704 19.3889 10.9534 21.8753 14.0205 21.8753C17.0875 21.8753 19.5739 19.3889 19.5739 16.3219C19.5739 13.2548 17.0875 10.7684 14.0205 10.7684C12.6938 10.7684 11.4757 11.2337 10.5205 12.01" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M22.7431 25.8396C20.6006 23.3868 17.457 21.8752 14.0205 21.8752H12.9286C8.12289 21.8752 3.96614 25.2231 2.94221 29.9185C2.63836 31.3119 3.69961 32.6296 5.12579 32.6296H15.1742" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14.5968 1.18997L15.5788 2.84155C15.6333 2.93323 15.7232 2.99852 15.8272 3.022L17.7014 3.4455C17.9889 3.51049 18.1023 3.85937 17.9079 4.08087L16.6406 5.52518C16.5702 5.60538 16.5359 5.71097 16.5457 5.81717L16.722 7.73055C16.7491 8.02407 16.4523 8.23969 16.1815 8.12324L14.4163 7.36431C14.3183 7.32218 14.2073 7.32218 14.1093 7.36431L12.3441 8.12332C12.0732 8.23976 11.7765 8.02415 11.8036 7.73063L11.9799 5.81725C11.9897 5.71105 11.9553 5.60546 11.885 5.52525L10.6177 4.08095C10.4233 3.85937 10.5367 3.51049 10.8241 3.44558L12.6984 3.02207C12.8024 2.99852 12.8923 2.9333 12.9468 2.84163L13.9287 1.19005C14.0794 0.936664 14.4462 0.936664 14.5968 1.18997Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22.7432 25.8396C20.6007 23.3868 17.4572 21.8752 14.0206 21.8752H12.9287C8.12302 21.8752 3.96626 25.2231 2.94233 29.9185C2.63848 31.3119 3.69973 32.6296 5.12591 32.6296H15.1743" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.5967 1.18997L15.5787 2.84155C15.6332 2.93323 15.723 2.99852 15.8271 3.022L17.7013 3.4455C17.9888 3.51049 18.1022 3.85937 17.9078 4.08087L16.6405 5.52518C16.5701 5.60538 16.5358 5.71097 16.5456 5.81717L16.7219 7.73055C16.749 8.02407 16.4521 8.23969 16.1814 8.12324L14.4162 7.36431C14.3182 7.32218 14.2072 7.32218 14.1091 7.36431L12.3439 8.12332C12.0731 8.23976 11.7764 8.02415 11.8035 7.73063L11.9798 5.81725C11.9896 5.71105 11.9552 5.60546 11.8849 5.52525L10.6176 4.08095C10.4231 3.85937 10.5365 3.51049 10.824 3.44558L12.6982 3.02207C12.8023 2.99852 12.8921 2.9333 12.9467 2.84163L13.9286 1.19005C14.0792 0.936664 14.4461 0.936664 14.5967 1.18997Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M4.33828 2.45055L5.14255 3.80326C5.1872 3.87834 5.26075 3.93179 5.346 3.95105L6.88099 4.29795C7.11648 4.35116 7.2093 4.63689 7.05012 4.81833L6.01211 6.00122C5.95446 6.0669 5.9264 6.15337 5.93443 6.24038L6.07886 7.80748C6.10103 8.04786 5.85797 8.22448 5.63617 8.12914L4.19041 7.50753C4.11013 7.47305 4.01922 7.47305 3.93894 7.50753L2.49318 8.12914C2.27137 8.22448 2.02831 8.04794 2.05048 7.80748L2.19491 6.24038C2.20294 6.15337 2.17481 6.0669 2.11723 6.00122L1.07931 4.81833C0.920043 4.63689 1.01294 4.35116 1.24843 4.29795L2.78342 3.95105C2.86867 3.93179 2.94222 3.87834 2.98687 3.80326L3.79114 2.45055C3.91447 2.24304 4.21495 2.24304 4.33828 2.45055Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M23.6858 2.45055L22.8815 3.80326C22.8368 3.87834 22.7633 3.93179 22.678 3.95105L21.1431 4.29795C20.9076 4.35116 20.8147 4.63689 20.9739 4.81833L22.0119 6.00122C22.0695 6.0669 22.0976 6.15337 22.0895 6.24038L21.9451 7.80748C21.9229 8.04786 22.166 8.22448 22.3878 8.12914L23.8336 7.50753C23.9138 7.47305 24.0047 7.47305 24.085 7.50753L25.5308 8.12914C25.7526 8.22448 25.9957 8.04794 25.9735 7.80748L25.829 6.24038C25.821 6.15337 25.8492 6.0669 25.9067 6.00122L26.9447 4.81833C27.1039 4.63689 27.011 4.35116 26.7755 4.29795L25.2405 3.95105C25.1553 3.93179 25.0817 3.87834 25.0371 3.80326L24.2328 2.45055C24.1096 2.24304 23.8091 2.24304 23.6858 2.45055Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M23.6856 2.45055L22.8814 3.80326C22.8367 3.87834 22.7632 3.93179 22.6779 3.95105L21.1429 4.29795C20.9074 4.35116 20.8146 4.63689 20.9738 4.81833L22.0117 6.00122C22.0694 6.0669 22.0974 6.15337 22.0894 6.24038L21.945 7.80748C21.9228 8.04786 22.1659 8.22448 22.3877 8.12914L23.8334 7.50753C23.9137 7.47305 24.0046 7.47305 24.0849 7.50753L25.5307 8.12914C25.7525 8.22448 25.9955 8.04794 25.9734 7.80748L25.8289 6.24038C25.8209 6.15337 25.849 6.0669 25.9066 6.00122L26.9445 4.81833C27.1038 4.63689 27.0109 4.35116 26.7754 4.29795L25.2404 3.95105C25.1552 3.93179 25.0816 3.87834 25.037 3.80326L24.2327 2.45055C24.1095 2.24304 23.809 2.24304 23.6856 2.45055Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M37.0131 29.4893H35.1307M37.0131 32.6596H35.1307M37.0131 35.8297H35.1307M38.5983 27.9043C38.5983 27.0289 37.8886 26.3192 37.0132 26.3192L31.2522 26.3103C30.4974 26.3092 29.886 25.6969 29.886 24.9421V20.8488C29.886 20.0045 29.4528 19.2192 28.7384 18.769C28.1682 18.4096 27.4119 18.697 27.2224 19.3439L24.933 27.1613C24.5662 28.4139 23.4173 29.2746 22.112 29.2746H20.5461V37.4519H22.968C24.249 37.4519 25.5231 37.6934 26.6978 38.2042C27.8674 38.7127 29.129 38.9751 30.4042 38.9751L37.0131 38.9999C37.8886 38.9999 38.5982 38.2903 38.5982 37.4148C38.5982 36.5394 37.8885 35.8298 37.0131 35.8298C37.8886 35.8298 38.5982 35.1201 38.5982 34.2447C38.5982 33.3692 37.8885 32.6596 37.0131 32.6596C37.8886 32.6596 38.5982 31.9499 38.5982 31.0746C38.5982 30.1992 37.8885 29.4895 37.0131 29.4895C37.8886 29.4893 38.5983 28.7797 38.5983 27.9043Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M19.9172 38.6724H16.1245C15.7772 38.6724 15.4955 38.3908 15.4955 38.0434V28.3737C15.4955 28.0263 15.7771 27.7446 16.1245 27.7446H19.9172C20.2645 27.7446 20.5462 28.0262 20.5462 28.3737V38.0434C20.5462 38.3908 20.2646 38.6724 19.9172 38.6724Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
+              <path d="M19.917 38.6724H16.1244C15.777 38.6724 15.4954 38.3908 15.4954 38.0434V28.3737C15.4954 28.0263 15.777 27.7446 16.1244 27.7446H19.917C20.2644 27.7446 20.5461 28.0262 20.5461 28.3737V38.0434C20.5461 38.3908 20.2645 38.6724 19.917 38.6724Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
               
             <h5>HAPPY CUSTOMERS</h5>
           </div>
@@ -405,8 +410,16 @@
         </div>
         
         <div class="col-lg-4">
-          <div class="why-choose-box">
-                    
+          <div class="why-choose-box icon-hover">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.01173 13.9203C8.66262 14.6471 8.46704 15.4616 8.46704 16.3219C8.46704 19.3889 10.9534 21.8753 14.0205 21.8753C17.0875 21.8753 19.5739 19.3889 19.5739 16.3219C19.5739 13.2548 17.0875 10.7684 14.0205 10.7684C12.6938 10.7684 11.4757 11.2337 10.5205 12.01" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22.7432 25.8396C20.6007 23.3868 17.4572 21.8752 14.0206 21.8752H12.9287C8.12302 21.8752 3.96626 25.2231 2.94233 29.9185C2.63848 31.3119 3.69973 32.6296 5.12591 32.6296H15.1743" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.5967 1.18997L15.5787 2.84155C15.6332 2.93323 15.723 2.99852 15.8271 3.022L17.7013 3.4455C17.9888 3.51049 18.1022 3.85937 17.9078 4.08087L16.6405 5.52518C16.5701 5.60538 16.5358 5.71097 16.5456 5.81717L16.7219 7.73055C16.749 8.02407 16.4521 8.23969 16.1814 8.12324L14.4162 7.36431C14.3182 7.32218 14.2072 7.32218 14.1091 7.36431L12.3439 8.12332C12.0731 8.23976 11.7764 8.02415 11.8035 7.73063L11.9798 5.81725C11.9896 5.71105 11.9552 5.60546 11.8849 5.52525L10.6176 4.08095C10.4231 3.85937 10.5365 3.51049 10.824 3.44558L12.6982 3.02207C12.8023 2.99852 12.8921 2.9333 12.9467 2.84163L13.9286 1.19005C14.0792 0.936664 14.4461 0.936664 14.5967 1.18997Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.33828 2.45055L5.14255 3.80326C5.1872 3.87834 5.26075 3.93179 5.346 3.95105L6.88099 4.29795C7.11648 4.35116 7.2093 4.63689 7.05012 4.81833L6.01211 6.00122C5.95446 6.0669 5.9264 6.15337 5.93443 6.24038L6.07886 7.80748C6.10103 8.04786 5.85797 8.22448 5.63617 8.12914L4.19041 7.50753C4.11013 7.47305 4.01922 7.47305 3.93894 7.50753L2.49318 8.12914C2.27137 8.22448 2.02831 8.04794 2.05048 7.80748L2.19491 6.24038C2.20294 6.15337 2.17481 6.0669 2.11723 6.00122L1.07931 4.81833C0.920043 4.63689 1.01294 4.35116 1.24843 4.29795L2.78342 3.95105C2.86867 3.93179 2.94222 3.87834 2.98687 3.80326L3.79114 2.45055C3.91447 2.24304 4.21495 2.24304 4.33828 2.45055Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M23.6856 2.45055L22.8814 3.80326C22.8367 3.87834 22.7632 3.93179 22.6779 3.95105L21.1429 4.29795C20.9074 4.35116 20.8146 4.63689 20.9738 4.81833L22.0117 6.00122C22.0694 6.0669 22.0974 6.15337 22.0894 6.24038L21.945 7.80748C21.9228 8.04786 22.1659 8.22448 22.3877 8.12914L23.8334 7.50753C23.9137 7.47305 24.0046 7.47305 24.0849 7.50753L25.5307 8.12914C25.7525 8.22448 25.9955 8.04794 25.9734 7.80748L25.8289 6.24038C25.8209 6.15337 25.849 6.0669 25.9066 6.00122L26.9445 4.81833C27.1038 4.63689 27.0109 4.35116 26.7754 4.29795L25.2404 3.95105C25.1552 3.93179 25.0816 3.87834 25.037 3.80326L24.2327 2.45055C24.1095 2.24304 23.809 2.24304 23.6856 2.45055Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M37.0131 29.4893H35.1307M37.0131 32.6596H35.1307M37.0131 35.8297H35.1307M38.5983 27.9043C38.5983 27.0289 37.8886 26.3192 37.0132 26.3192L31.2522 26.3103C30.4974 26.3092 29.886 25.6969 29.886 24.9421V20.8488C29.886 20.0045 29.4528 19.2192 28.7384 18.769C28.1682 18.4096 27.4119 18.697 27.2224 19.3439L24.933 27.1613C24.5662 28.4139 23.4173 29.2746 22.112 29.2746H20.5461V37.4519H22.968C24.249 37.4519 25.5231 37.6934 26.6978 38.2042C27.8674 38.7127 29.129 38.9751 30.4042 38.9751L37.0131 38.9999C37.8886 38.9999 38.5982 38.2903 38.5982 37.4148C38.5982 36.5394 37.8885 35.8298 37.0131 35.8298C37.8886 35.8298 38.5982 35.1201 38.5982 34.2447C38.5982 33.3692 37.8885 32.6596 37.0131 32.6596C37.8886 32.6596 38.5982 31.9499 38.5982 31.0746C38.5982 30.1992 37.8885 29.4895 37.0131 29.4895C37.8886 29.4893 38.5983 28.7797 38.5983 27.9043Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M19.917 38.6724H16.1244C15.777 38.6724 15.4954 38.3908 15.4954 38.0434V28.3737C15.4954 28.0263 15.777 27.7446 16.1244 27.7446H19.917C20.2644 27.7446 20.5461 28.0262 20.5461 28.3737V38.0434C20.5461 38.3908 20.2645 38.6724 19.917 38.6724Z" stroke="#1E1E1E" stroke-opacity="0.933333" stroke-width="1.14688" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>    
             <h5>HAPPY CUSTOMERS</h5>
           </div>
         </div>
@@ -443,7 +456,7 @@
 
   <section class="section-padding testi-main-div">
       <div class="container">
-        <div class="text-center-div">
+        <div class="text-center-div" data-aos="fade-up" data-aos-duration="1500">
           <h2 class="main-sub-head green-color">
             Testimonials
           </h2>
@@ -453,7 +466,7 @@
         </div>
           <div class="owl-carousel owl-theme" id="testimonial-slider">
             <div class="item">
-              <div class="testi-box">
+              <div class="testi-box" data-aos="fade-up" data-aos-duration="1500">
                 <div class="row d-flex align-items-center">
                   <div class="col-lg-3">
                     <div class="test-img-box">
@@ -474,7 +487,7 @@
             </div>
 
             <div class="item">
-              <div class="testi-box">
+              <div class="testi-box" data-aos="fade-up" data-aos-duration="1500">
                 <div class="row d-flex align-items-center">
                   <div class="col-lg-3">
                     <div class="test-img-box">
@@ -495,7 +508,7 @@
             </div>
 
             <div class="item">
-              <div class="testi-box">
+              <div class="testi-box" data-aos="fade-up" data-aos-duration="1500">
                 <div class="row d-flex align-items-center">
                   <div class="col-lg-3">
                     <div class="test-img-box">
@@ -516,7 +529,49 @@
             </div>
             
             <div class="item">
-              <div class="testi-box">
+              <div class="testi-box" data-aos="fade-up" data-aos-duration="1500">
+                <div class="row d-flex align-items-center">
+                  <div class="col-lg-3">
+                    <div class="test-img-box">
+                      <img src="assets/img/avatar-2.png" alt="" class="img-fluid avatar">
+                      <img src="assets/img/icons/coma.svg" alt="" class="coma-icon">
+                    </div>
+                    
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="testi-cntnt">
+                      <h3>Anglo Sexon</h3>
+                      <h4>From USA</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="testi-box" data-aos="fade-up" data-aos-duration="1500">
+                <div class="row d-flex align-items-center">
+                  <div class="col-lg-3">
+                    <div class="test-img-box">
+                      <img src="assets/img/avatar-1.png" alt="" class="img-fluid avatar">
+                      <img src="assets/img/icons/coma.svg" alt="" class="coma-icon">
+                    </div>
+                    
+                  </div>
+                  <div class="col-lg-9">
+                    <div class="testi-cntnt">
+                      <h3>Anglo Sexon</h3>
+                      <h4>From USA</h4>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="item">
+              <div class="testi-box" data-aos="fade-up" data-aos-duration="1500">
                 <div class="row d-flex align-items-center">
                   <div class="col-lg-3">
                     <div class="test-img-box">
@@ -544,7 +599,7 @@
 
     <section class="section-padding">
       <div class="container">
-        <div class="text-center-div">
+        <div class="text-center-div" data-aos="fade-up" data-aos-duration="1500">
           <h5 class="secdry-sub-head">
             Our Partners
           </h5>
@@ -553,7 +608,7 @@
           </h2>
         </div>
 
-        <div class="owl-carousel owl-theme partners-slider" id="partner-slider">
+        <div class="owl-carousel owl-theme partners-slider" id="partner-slider" data-aos="fade-up" data-aos-duration="1500">
           <div class="item">
             <img src="assets/img/partner-logo-1.png" alt="" class="img-fluid">
           </div>
@@ -584,7 +639,7 @@
 
     <section class="section-padding">
       <div class="container">
-        <div class="row">
+        <div class="row" data-aos="fade-up" data-aos-duration="1500">
           <div class="text-center-div">
             <h5 class="secdry-sub-head">
               Our Clients
@@ -594,7 +649,7 @@
             </h2>
           </div>
 
-          <div class="row">
+          <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-5" data-aos="fade-up" data-aos-duration="1500">
             <div class="col">
               <div class="client-box">
                 <img src="assets/img/client-1.png" alt="">
@@ -622,7 +677,7 @@
             </div>
           </div>
 
-          <div class="row">
+          <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lgg-4 row-cols-xl-5" data-aos="fade-up" data-aos-duration="1500">
             <div class="col">
               <div class="client-box">
                 <img src="assets/img/client-1.png" alt="">
@@ -653,13 +708,13 @@
       </div>
     </section>
 
-    <section class="section-padding contact-main-div">
+    <section class="section-padding contact-main-div" id="contact-us">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-lg-5">
+          <div class="col-lg-5"  data-aos="fade-right" data-aos-duration="1500">
             <img src="assets/img/contact-img.png" alt="" class="img-fluid contact-img">
           </div>
-          <div class="col-lg-7">
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1500">
             <h5 class="secdry-sub-head">
               Contact Me
             </h5>
@@ -673,7 +728,7 @@
                 <input type="text" placeholder="Phone Number" class="form-control main-input mt-20">
               </div>
               <div class="col-lg-6">
-                <input type="text" placeholder="Your First Name" class="form-control main-input">
+                <input type="text" placeholder="Your First Name" class="form-control main-input sm-mt-contact">
                 <input type="text" placeholder="Phone Number" class="form-control main-input mt-20">
               </div>
 
@@ -692,17 +747,17 @@
     </section>
 
 
-    <section class="section-padding footer">
+    <section class="section-padding footer"  data-aos="fade-up" data-aos-duration="1500">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
             <div class="footer-logo-part">
               <img src="assets/img/logo.svg" alt="" class="img-fluid">
               <h6>Design | words | codes</h6>
-              <div class="d-flex">
+              <div class="d-flex sm-mb-footer">
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-instagram-square"></i>
-                <i class="fab fa-twitter"></i>
+                <i class="fa-brands fa-x-twitter"></i>
                 <i class="fab fa-linkedin"></i>
               </div>
             </div>
@@ -736,7 +791,7 @@
             </ul>
           </div>
           <div class="col-lg-3">
-            <h5 class="footer-head">Services</h5>
+            <h5 class="footer-head">Have questions?</h5>
             <div class="footer-contact">
               <i class="fas fa-envelope"></i>
               <h6>support@veuzconcepts.com </h6>
@@ -754,26 +809,19 @@
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-  </script>
-
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js " integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js " integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://kit.fontawesome.com/16b0815225.js" crossorigin="anonymous"></script>
   <script src="assets/js/script.js"></script>
 
-
+  <script>
+  AOS.init({disable: 'mobile'});
+  </script>
   <script>
     // this function used to creat th countUp  animation for business websites
     // use the three parameters to customize it
@@ -803,25 +851,22 @@
 
 
 <script>
-      $('#testimonial-slider').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      autoplayHoverPause: false,
-      responsive: {
-        0: {
-          items: 1
+    $('#testimonial-slider').owlCarousel({    loop:true,
+    margin:10,
+    nav:true,
+    autoplay: true,
+    responsive:{
+        0:{
+            items:1
         },
-        600: {
-          items: 1
+        600:{
+            items:3
         },
-        1000: {
-          items: 2
+        1000:{
+            items:2
         }
-      }
-    })
+    }
+})
 </script>
 
 <script>

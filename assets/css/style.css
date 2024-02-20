@@ -16,7 +16,6 @@ a {
 
 :root {
     --primary-btn-color: linear-gradient(to right, rgba(143, 121, 255), rgba(91, 127, 255));
-    --box: linear-gradient(to right, rgb(121, 190, 255), rgb(91, 176, 255));
     --white: #fff;
     --heading-color: #22130C;
     --para-color: #747579;
@@ -52,11 +51,34 @@ a {
     height: 100%;
 }
 
+.home-nav li{
+    margin-right: 30px;
+}
+
 .home-nav li a {
     color: var(--white) !important;
     font-weight: 300;
     font-size: 15px;
-    margin-right: 30px;
+    position: relative;
+    padding: 0px 0px 10px !important;
+        transition: 1s; 
+
+}
+
+.home-nav li a:before{
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    width: 0%;
+    height: 1px;
+    background-color: var(--white);
+    transition: 1s;
+        transition: 1s; 
+}
+
+.home-nav li a:hover:before{
+    width: 100%;
+    transition: 1s;
 }
 
 .home-nav li .active{
@@ -72,7 +94,7 @@ a {
     transition: 0.5s !important;
 }
 .nav-btn:hover{
-    background: var(--primary-btn-color) !important;
+    background: #5B7FFF !important;
     transition: 0.5s !important;
     border: none !important;
 }
@@ -220,7 +242,7 @@ a {
 }
 
 .servce-div img:hover{
-    transform: scale(1.3);
+    transform: scale(1.3) rotate(6deg);
     transition: 1s;
 }
 
@@ -309,6 +331,8 @@ a {
     padding: 40px 30px;
     border-radius: 10px;
     margin-top: 40px;
+    transition: all .5s;
+    cursor: pointer;
 }
 
 .enquiry-btn {
@@ -321,8 +345,14 @@ a {
     border-radius: 7px;
     margin-top: 20px;
     font-size: 14px;
+    transition: all .5s;
 }
 
+
+.enquiry-btn:hover{
+    transition: all .5s;
+    transform: translateY(-4px);
+}
 .enquiry-btn span{
     margin-left: 7px !important;
 }
@@ -336,6 +366,8 @@ a {
     border-radius: 10px;
     position: relative;
     margin-top: 40px;
+    transition: all .5s;
+    cursor: pointer;
 }
 
 .offer-white {
@@ -379,25 +411,44 @@ a {
     box-shadow: var(--box-shadow);
     margin-top: 15px;
     border-radius: 7px;
-    -webkit-transition: background-color 2s ease-out;
-    -moz-transition: background-color 2s ease-out;
-    -o-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out;
+    transition: all .5s;
+    cursor: pointer;
 }
 
 .why-choose-box:hover{
-    background-image: var(--box) !important;
+    background: #5B7FFF;
     color: #FFF !important;
+    transform: translateY(-4px);
+    transition: all .5s;
 }
 
+.why-choose-box:hover h5{
+    color: var(--white);
+    transition: all .5s;
+}
 
+.why-choose-box:hover svg path{
+    fill: var(--white) !important;
+    transition: all .5s;
+}
 
+.icon-hover:hover svg path{
+    stroke: var(--white) !important;
+    fill: none !important;
+    transition: all .5s;
+}
+
+.why-choose-box svg path{
+    color: var(---black);
+    transition: all .5s;
+}
        
 .why-choose-box h5{
     color: var(---black);
     font-size: 14px;
     font-weight: 500;
     margin: 0px 0px 0px 10px;
+    transition: all .5s;
 }
 
 .why-choose-box img{
@@ -411,7 +462,7 @@ a {
 .testi-main-div{
     background-image: url(../img/testi-bg.jpg);
     width: 100%;
-    height: 650px;
+    height: 700px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -472,8 +523,12 @@ a {
     margin-bottom: 10px;
 }
 
-#testimonial-slider .owl-theme .owl-nav .owl-prev{
+#testimonial-slider .owl-nav {
     display: none !important;
+}
+
+.owl-theme .owl-dots, .owl-nav{
+    margin-top: 30px !important;
 }
 
 .partners-slider .item img{
@@ -499,18 +554,27 @@ a {
 
 .client-box {
     background-color: var(--white);
-    box-shadow: var(--box-shadow);
+    border: 1px solid #ebebeb;
     min-height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 15px;
+    transition: all .5s;
 }
+
+.client-box:hover{
+    transition: all .5s;
+    transform: translateY(-7px);
+    border: none;
+    box-shadow: 0px 37px 60px -15px rgba(50, 59, 79, 0.1);
+}
+
 
 .contact-main-div{
     background-image: url(../img/testi-bg.jpg);
     width: 100%;
-    height: 700px;
+    height: 750px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -659,9 +723,6 @@ a {
 }
 
 
-
-
-
 .navbar-toggle.uarr .icon-bar:nth-of-type(1) {
 	transform: translate3d(1px,0,0) rotate(-45deg);
 	transform-origin: center center;
@@ -767,3 +828,159 @@ a {
   font-size:14px;
 }
 
+
+.inner-banner{
+    background-image: url(../img/banner/home-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+.inner-banner-cntnt h2{
+    font-size: 45px;
+    padding-top: 60px;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--white);
+}
+
+.offer-box:hover{
+    transform: translateY(-4px);
+    transition: all .5s;
+}
+.offer-box-dark:hover{
+    transform: translateY(-4px);
+    transition: all .5s;
+}
+
+/* start responsive */
+@media (max-width: 1600px){
+
+}
+@media (max-width: 1440px){}
+@media (max-width: 1366px){}
+@media (max-width: 1280px){}
+@media (max-width: 1280px){}
+@media only screen and (max-width: 1024px){
+    .main-nav .navbar-collapse{
+        background-color: none !important;
+        position: relative !important;
+    }
+}
+@media screen and (min-width:100px) and (max-width:1024px) {
+    .main-container .home-contact{
+        display: none !important;
+    }
+    .navbar-toggler:focus{
+        box-shadow: none !important;
+        border: 0px;
+    }
+    .navbar-toggler{
+        background-color: white !important;
+        width: 45px;
+        height: 40px;
+        padding: 0px !important;
+    }
+    .navbar-toggler-icon{
+        width: 1.3em;
+        height: 0.8em;
+    }
+    .main-nav .navbar-collapse{
+        background-color: #fff;
+        padding: 15px;
+        position: absolute;
+        top: 100px;
+    }
+    .home-nav li a{
+        color: #222 !important;
+    }
+    .nav-btn{
+        background-image: var(--primary-btn-color);
+    }
+    .banner-cntnt{
+        padding-top: 120px;
+    }
+    .banner-cntnt h2{
+        font-size: 26px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    .section-padding {
+        padding: 40px 0px;
+    }
+    .counter-box{
+        margin-top: 15px;
+    }
+    .abt-img {
+        width: 300px;
+        display: block;
+        margin: 25px auto;
+    }
+    .main-sub-head{
+        font-size: 25px;
+        margin: 0px 0px 15px 0px;
+    }
+    .mt-40 {
+        margin-top: 0px;
+    }
+    .why-choose-img{
+        margin-top: 25px;
+    }
+    .testi-main-div{
+        height: 600px;
+    }
+    .coma-icon{
+        display: none !important;
+    }
+    .testi-cntnt h3{
+        margin-top: 17px;
+        text-align: center;
+    }
+    .test-img-box img{
+        display: block;
+        margin: auto;
+    }
+    .testi-cntnt h4{
+        text-align: center;
+    }
+    .partners-slider .owl-dots, .owl-theme .owl-nav{
+        display: none;
+    }
+    .contact-img {
+        width: 200px;
+        margin: 30px auto;
+        display: block;
+    }
+    .contact-main-div{
+        height: 1110px;
+    }
+    .sm-mt-contact{
+        margin-top: 20px;
+    }
+    .mt-20 {
+        margin-top: 20px;
+    }
+    .sm-mb-footer{
+        margin-bottom: 25px;
+    }
+    .footer-list li{
+        margin-bottom: 10px;
+    }
+    .footer-head{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .mt-50 {
+        margin-top: 0px !important;
+    }
+    .srvc-img img{
+        margin: 25px 0px;
+    }
+    .counter-box h2 span{
+        font-size: 30px;
+    }
+}
